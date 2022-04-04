@@ -1,0 +1,103 @@
+h1 {
+  font-size: 4rem;
+}
+p {
+  font-size: 1.5rem;
+}
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  color: #95caee;
+  background: #473147;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding-top: 100px;
+}
+
+.blue {
+  background: #344668;
+}
+
+.red {
+  background: #dd3f31;
+}
+
+.pink {
+  background: #ff0066;
+  overflow: hidden;
+}
+.text-pink {
+  color: #ff0066;
+}
+.dark {
+  background: #64648b;
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: #473147;
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #344668;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+.discord-button {
+  background-color: #4e5d94;
+  width: 20%;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+.trans-1 {
+  background-color: #99D9EA;
+  min-height: 2px;
+  padding-top: 1px;
+  color: #FFAEC9;
+}
+.trans-2 {
+    background-color: #FFAEC9;
+    min-height: 2px;
+    padding-top: 1px;
+    color: #99D9EA;
+  }
+.trans-3 {
+    background-color: #fff;
+    min-height: 2px;
+    padding-top: 1px;
+    color: #000000;
+  }

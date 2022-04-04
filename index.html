@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pinkulu</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <meta property="og:title" content="Pinkulu">
+    <meta property="og:description" content="I do things sometimes.">
+    <meta property="og:image" content="https://pinkulu.com/images/logo.png">
+    <meta property="og:url" content="https://pinkulu.com">
+  </head>
+  <body>
+    <section class="blue">
+      <h1 class="text-pink">Pinkulu</h1>
+      <div class="curve"></div>
+      <p>I make things sometimes</p>
+      <p>(i use arch btw)</p>
+    </section>
+
+    <section>
+      <h1>Discord</h1>
+      <button onclick="discord()" class="discord-button" id="discord-button">
+        <a>Join</a>
+      </button>
+    </section>
+    
+    <section class='trans-1'>
+      <h1>Trans</h1>
+    </section>
+    <section class='trans-2'>
+      <h1>Rights</h1>
+    </section>
+    <section class='trans-3'>
+      <h1>Are</h1>
+    </section>
+    <section class='trans-2'>
+      <h1>Human</h1>
+    </section>
+    <section class='trans-1'>
+      <h1>Rights</h1>
+    </section>
+    <script>
+      function discord() {
+        document.getElementById("discord-button").style.background = "#61708d";
+        setTimeout(function () {
+          document.getElementById("discord-button").style.background = "#4E5D94";
+        }, 200)
+        window.open("https://discord.gg/Fykpshg", "_blank");
+      }
+      const b = document.getElementById("discord-button");
+      b.onpointerdown = function() {
+        document.getElementById("discord-button").style.background = "#61708d";
+      }
+      b.onpointerup = function() {
+        document.getElementById("discord-button").style.background = "#4E5D94";
+      }
+    </script>
+  </body>
+</html>
