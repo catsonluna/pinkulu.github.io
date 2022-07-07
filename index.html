@@ -1,64 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Pinkulu</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-    <meta property="og:title" content="Pinkulu">
-    <meta property="og:description" content="I do things sometimes.">
-    <meta property="og:image" content="https://pinkulu.com/images/logo.png">
-    <meta property="og:url" content="https://pinkulu.com">
-  </head>
-  <body>
-    <section class="blue">
-      <h1 class="text-pink">Pinkulu</h1>
-      <div class="curve"></div>
-      <p>I make things sometimes</p>
-    </section>
-    <section>
-    <div class="btn-group">
-      <button onclick="discord()" class="discord-button" id="discord-button">
-        <a>Discord</a>
-      </button>
-      <button onclick="HeightLimitMod()" class="discord-button" id="discord-button">
-        <a>Height Limit Mod</a>
-      </button>
-    </div>
-  </section>
+h1 {
+  font-size: 4rem;
+}
+p {
+  font-size: 1.5rem;
+}
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  color: #95caee;
+  background: #473147;
+  overflow-x: hidden;
     
-    
-    <section class='trans-1'>
-      <h1>Trans</h1>
-    </section>
-    <section class='trans-2'>
-      <h1>Rights</h1>
-    </section>
-    <section class='trans-3'>
-      <h1>Are</h1>
-    </section>
-    <section class='trans-2'>
-      <h1>Human</h1>
-    </section>
-    <section class='trans-1'>
-      <h1>Rights</h1>
-    </section>
-    <script>
-      function discord() {
-        setTimeout(function () {
-        }, 200)
-        window.open("https://discord.gg/Fykpshg", "_blank");
-      }
-      function HeightLimitMod() {
-        setTimeout(function () {
-        }, 200)
-        window.open("https://modrinth.com/mod/hlm/", "_blank");
-      }
-    </script>
-  </body>
-</html>
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+.button-group button {
+  background-color: #4e5d94;
+  background-color: #4b5886;
+  color: white; /* White text */
+  padding: 24px 48px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin: 5px ;
+}
+
+.button-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.button-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.button-group button:hover {
+  background-color: #6c32af;
+}
+
+.discord-button {
+  background-color: #4e5d94;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(75, 75, 75); 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: magenta; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ee21aa; 
+}
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding-top: 100px;
+}
+
+.blue {
+  background: #344668;
+}
+
+.red {
+  background: #dd3f31;
+}
+
+.pink {
+  background: #ff0066;
+  overflow: hidden;
+}
+.text-pink {
+  color: #ff0066;
+}
+.dark {
+  background: #64648b;
+}
+
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: #473147;
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #344668;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+.trans-1 {
+  background-color: #99D9EA;
+  min-height: 2px;
+  padding-top: 1px;
+  color: #FFAEC9;
+}
+.trans-2 {
+    background-color: #FFAEC9;
+    min-height: 2px;
+    padding-top: 1px;
+    color: #99D9EA;
+  }
+.trans-3 {
+    background-color: #fff;
+    min-height: 2px;
+    padding-top: 1px;
+    color: #000000;
+  }
