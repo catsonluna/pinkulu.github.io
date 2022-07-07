@@ -15,7 +15,7 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
-.btn-group button {
+.button-group button {
   background-color: #4e5d94;
   background-color: #4b5886;
   color: white; /* White text */
@@ -25,19 +25,19 @@ body {
   margin: 5px ;
 }
 
-.btn-group button:not(:last-child) {
+.button-group button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
 /* Clear floats (clearfix hack) */
-.btn-group:after {
+.button-group:after {
   content: "";
   clear: both;
   display: table;
 }
 
 /* Add a background color on hover */
-.btn-group button:hover {
+.button-group button:hover {
   background-color: #6c32af;
 }
 
