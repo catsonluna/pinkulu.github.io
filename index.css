@@ -10,7 +10,7 @@ body {
   color: #95caee;
   background: #473147;
   overflow-x: hidden;
-  
+    
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -90,19 +90,6 @@ section {
   transform: translate(-4%, 40%);
   z-index: -1;
 }
-.discord-button {
-  background-color: #4e5d94;
-  width: 20%;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 8px;
-}
 .trans-1 {
   background-color: #99D9EA;
   min-height: 2px;
@@ -120,4 +107,41 @@ section {
     min-height: 2px;
     padding-top: 1px;
     color: #000000;
+  }
+  .btn-group button {
+    background-color: #4e5d94;
+    background-color: #4b5886;
+    color: white; /* White text */
+    padding: 24px 48px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin: 5px ;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #6c32af;
+  }
+
+  .discord-button {
+    background-color: #4e5d94;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
   }
