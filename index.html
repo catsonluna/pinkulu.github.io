@@ -21,13 +21,17 @@
       <div class="curve"></div>
       <p>I make things sometimes</p>
     </section>
-
     <section>
-      <h1>Discord</h1>
+    <div class="btn-group">
       <button onclick="discord()" class="discord-button" id="discord-button">
-        <a>Join</a>
+        <a>Discord</a>
       </button>
-    </section>
+      <button onclick="HeightLimitMod()" class="discord-button" id="discord-button">
+        <a>Height Limit Mod</a>
+      </button>
+    </div>
+  </section>
+    
     
     <section class='trans-1'>
       <h1>Trans</h1>
@@ -46,18 +50,14 @@
     </section>
     <script>
       function discord() {
-        document.getElementById("discord-button").style.background = "#61708d";
         setTimeout(function () {
-          document.getElementById("discord-button").style.background = "#4E5D94";
         }, 200)
         window.open("https://discord.gg/Fykpshg", "_blank");
       }
-      const b = document.getElementById("discord-button");
-      b.onpointerdown = function() {
-        document.getElementById("discord-button").style.background = "#61708d";
-      }
-      b.onpointerup = function() {
-        document.getElementById("discord-button").style.background = "#4E5D94";
+      function HeightLimitMod() {
+        setTimeout(function () {
+        }, 200)
+        window.open("https://modrinth.com/mod/hlm/", "_blank");
       }
     </script>
   </body>
